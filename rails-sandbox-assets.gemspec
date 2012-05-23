@@ -4,9 +4,8 @@ require File.expand_path('../lib/rails-sandbox-assets/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["Rodrigo Rosenfeld Rosas"]
   gem.email         = ["rr.rosas@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
-  gem.homepage      = ""
+  gem.description   = %q{Allows assets to be served in a sandboxed application in a Rails project}
+  gem.homepage      = "http://github.com/rosenfeld/rails-sandbox-assets"
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
