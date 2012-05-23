@@ -1,9 +1,4 @@
-require "rails-sandbox-assets/version"
+require "sandbox_assets/version"
 
-module Rails
-  module Sandbox
-    module Assets
-      # Your code goes here...
-    end
-  end
+module SandboxAssets
 end

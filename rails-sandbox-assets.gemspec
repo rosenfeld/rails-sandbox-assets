@@ -1,5 +1,5 @@
 # -*- encoding: utf-8 -*-
-require File.expand_path('../lib/rails-sandbox-assets/version', __FILE__)
+require File.expand_path('../lib/sandbox_assets/version', __FILE__)
 
 Gem::Specification.new do |gem|
   gem.authors       = ["Rodrigo Rosenfeld Rosas"]
@@ -12,5 +12,5 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.name          = "rails-sandbox-assets"
   gem.require_paths = ["lib"]
-  gem.version       = Rails::Sandbox::Assets::VERSION
+  gem.version       = SandboxAssets::VERSION
 end
