@@ -72,12 +72,11 @@ Default settings:
 ## Gems using Rails Sandbox Assets
 
 - [rails\_sandbox\_jasmine](http://github.com/rosenfeld/rails_sandbox_jasmine)
-
-TODO: add a gem for Mocha/Chai.
+- [rails\_sandbox\_mocha\_chai](http://github.com/rosenfeld/rails_sandbox_mocha_chai)
 
 ## Examples
 
-TODO: Add some example application to Github using Mocha/Chai.js test runner.
+TODO: Add some example application to Github.
 
 ## Contributing
 
