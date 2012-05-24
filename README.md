@@ -19,11 +19,11 @@ And then execute:
 
 ## Usage
 
-Place your tests under _test/javascripts/\*\_test.js_ or _specs/javascripts/\*\_spec.js.coffee_.
+Place your tests under _test/javascripts/\*\_test.js_ or _spec/javascripts/\*\_spec.js.coffee_.
 Use JavaScript or CoffeeScript.
 
 You can add your test assets to _test/assets/javascripts_, _test/assets/stylesheets_,.
-_specs/assets/javascripts_ and _specs/assets/stylesheets_.
+_spec/assets/javascripts_ and _spec/assets/stylesheets_.
 
     $ rake sandbox_assets:serve
 
@@ -56,14 +56,14 @@ Or you can create a separate initializer if you prefer:
 Default settings:
 
     c.port = 5000
-    # By default, sandbox_assets will look for your tests in test/javascripts and specs/javascripts
-    c.tests_roots = %w(test/javascripts specs/javascripts)
-    # Add to Rails assets path. Besides your tests/specs, any assets in those paths will be served
+    # By default, sandbox_assets will look for your tests in test/javascripts and spec/javascripts
+    c.tests_roots = %w(test/javascripts spec/javascripts)
+    # Add to Rails assets path. Besides your tests/spec, any assets in those paths will be served
     # by the asset pipeline:
-    c.assets_paths = c.tests_roots + 
+    c.assets_paths = c.tests_roots +
         %w(test/assets/javascripts  test/assets/stylesheets
-          specs/assets/javascripts specs/assets/stylesheets)
-    # Pattern to find your tests or specs inside the tests_roots directories:
+          spec/assets/javascripts spec/assets/stylesheets)
+    # Pattern to find your tests or spec inside the tests_roots directories:
     c.tests_patterns = %w(**/*_{test,spec}.{js,coffee}*)
     # By default, you can override which template to use in the params, like:
     # http://localhost:5000/?template=spec_runner/runner
