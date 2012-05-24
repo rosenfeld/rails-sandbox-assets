@@ -6,6 +6,11 @@ module SandboxAssets
     before_filter :extract_template_from_params
     before_filter :render_template
 
+    # additional before_filters can use this
+    def template=(template)
+      @template = template
+    end
+
     protected
 
     def find_tests
