@@ -5,6 +5,7 @@ Gem::Specification.new do |gem|
   gem.authors       = ["Rodrigo Rosenfeld Rosas"]
   gem.email         = ["rr.rosas@gmail.com"]
   gem.summary       = %q{Allows assets to be served in a sandboxed application in a Rails project}
+  gem.description   = %q{Override your test runner and run rake sandbox_assets:serve}
   gem.homepage      = "http://github.com/rosenfeld/rails-sandbox-assets"
 
   gem.files         = `git ls-files`.split($\)
