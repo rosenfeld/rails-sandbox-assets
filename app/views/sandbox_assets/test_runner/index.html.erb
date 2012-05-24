@@ -4,6 +4,9 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 
   <title>Test runner</title>
+<% @stylesheets.each do |css| -%>
+  <%= stylesheet_link_tag css %>
+<% end -%>
 <% @tests.each do |test| -%>
   <%= javascript_include_tag test %>
 <% end -%>
@@ -12,8 +15,15 @@
   <p>Override this test runner with your own at app/views/sandbox_assets/test_runner/index.html.erb. The test list to include are available at @tests:</p>
   <ul>
     <% @tests.each do |test| -%>
-      <li><%= link_to test, asset_path(test) %></li>
+      <li><%= link_to test, javascript_path(test) %></li>
     <% end -%>
+  </ul>
+  <p>And those stylesheets will be also included:</p>
+  <ul>
+
+  <% @stylesheets.each do |css| -%>
+    <li><%= link_to css, stylesheet_path(css) %></li>
+  <% end -%>
   </ul>
 
   <p>Here is the source for this file (<%= __FILE__ %>):</p>
