@@ -69,11 +69,15 @@ Default settings:
     # http://localhost:5000/?template=spec_runner/runner
     c.disable_template_param = false
 
+## Gems using Rails Sandbox Assets
+
+- [rails\_sandbox\_jasmine](http://github.com/rosenfeld/rails_sandbox_jasmine)
+
+TODO: add a gem for Mocha/Chai.
+
 ## Examples
 
-TODO: Add some examples, like Jasmine and Mocha/Chai.js.
-
-TODO: Also release some other gems for those frameworks on top of this one.
+TODO: Add some example application to Github using Mocha/Chai.js test runner.
 
 ## Contributing
 
