@@ -1,6 +1,6 @@
 # Rails::Sandbox::Assets
 
-TODO: Write a gem description
+Customize your test runner while taking advantage of the Rails asset pipeline.
 
 ## Installation
 
@@ -12,13 +12,21 @@ And then execute:
 
     $ bundle
 
-Or install it yourself as:
-
-    $ gem install rails-sandbox-assets
-
 ## Usage
 
-TODO: Write usage instructions here
+    $ rake sandbox_assets:serve
+
+Follow the instructions in http://localhost:5000 for how to override the void bundled test-runner.
+
+## Settings
+
+TODO: Talk about the engine config options
+
+## Examples
+
+TODO: Add some examples, like Jasmine and Mocha/Chai.js.
+
+TODO: Also release some other gems for those frameworks on top of this one.
 
 ## Contributing
 
