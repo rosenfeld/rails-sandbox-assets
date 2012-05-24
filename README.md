@@ -8,6 +8,11 @@ Add this line to your application's Gemfile:
 
     gem 'rails-sandbox-assets'
 
+Or if you prefer to use the master branch:
+
+    gem 'rails-sandbox-assets', git: 'git://github.com/rosenfeld/rails-sandbox-assets' # or:
+    gem 'rails-sandbox-assets', github: 'rosenfeld/rails-sandbox-assets' # Bundler-pre syntax
+
 And then execute:
 
     $ bundle
