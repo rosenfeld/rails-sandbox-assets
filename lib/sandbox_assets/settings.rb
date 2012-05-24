@@ -6,8 +6,9 @@ module SandboxAssets
 
     def initialize
       @tests_roots = %w(test/javascripts specs/javascripts)
-      @assets_paths = @tests_roots + 
-        %w(test/assets/javascripts test/assets/stylesheets)
+      @assets_paths = @tests_roots +
+        %w(test/assets/javascripts  test/assets/stylesheets
+          specs/assets/javascripts specs/assets/stylesheets)
       @tests_patterns = %w(**/*_{test,spec}.{js,coffee}*)
       @port = 5000
       @disable_template_param = false
