@@ -76,7 +76,23 @@ Default settings:
 
 ## Examples
 
-TODO: Add some example application to Github.
+Here are some more examples on how you can use this gem:
+
+Creating new engines depending on this one:
+
+- [konacha\_like](https://github.com/rosenfeld/konacha_like)
+- [konacha\_reuse](https://github.com/rosenfeld/konacha_reuse)
+
+Creating application depending direcly on this gem:
+
+- [mixed\_test\_runners](https://github.com/rosenfeld/mixed_test_runners)
+
+The above application shows how to set-up a mixed environment with specs written both in Jasmine and
+Mocha/Chai, using different spec runners, of course. Also it demonstrates how to set up your custom
+spec runner.
+
+In this case it is a simple HTML pointing to the paths for each supported spec runner, but you can use
+the _@tests_ and _@stylesheets_ instance variables to include them anywhere in your custom template file.
 
 ## Contributing
 
