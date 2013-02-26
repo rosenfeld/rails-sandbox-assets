@@ -15,5 +15,5 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
   gem.version       = SandboxAssets::VERSION
 
-  gem.add_dependency 'rails', '~> 3.1'
+  gem.add_dependency 'rails', '>= 3.1'
 end
