@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <title>Test runner</title>
+<% @stylesheets.each do |css| -%>
+  <%= stylesheet_link_tag css %>
+<% end -%>
+<%= javascript_include_tag @tests.first %>
+</head>
+<body>
+  <p>Override this test runner with your own at app/views/sandbox_assets/test_runner/iframe.html.erb. The test to include is available at @tests.first:</p>
+  <ul>
+    <li><%= link_to @tests.first, javascript_path(@tests.first) %></li>
+  </ul>
+  <p>And those stylesheets will be also included:</p>
+  <ul>
+
+  <% @stylesheets.each do |css| -%>
+    <li><%= link_to css, stylesheet_path(css) %></li>
+  <% end -%>
+  </ul>
+
+  <p>Here is the source for this file (<%= __FILE__ %>):</p>
+  <pre style="background-color: lightgreen; color: black"><%= IO.read __FILE__ %></pre>
+</body>
+</html>

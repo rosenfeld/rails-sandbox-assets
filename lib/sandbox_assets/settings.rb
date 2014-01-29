@@ -3,7 +3,7 @@ module SandboxAssets
     attr_reader :options
     attr_accessor :tests_roots, :assets_paths, :port,
       :tests_patterns, :stylesheets_patterns,
-      :template, :disable_template_param
+      :template, :iframe_template, :disable_template_param
 
     def initialize
       @tests_roots = %w(test/javascripts spec/javascripts)
