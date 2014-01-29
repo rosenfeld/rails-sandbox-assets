@@ -12,6 +12,10 @@ module SandboxAssets
       @template = template
     end
 
+    def iframe_template=(template)
+      @iframe_template = template
+    end
+
     protected
 
     def find_tests
