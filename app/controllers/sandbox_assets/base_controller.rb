@@ -2,10 +2,11 @@ require_dependency "sandbox_assets/test_asset"
 
 module SandboxAssets
   class BaseController < ActionController::Base
-    before_filter :find_tests
-    before_filter :find_stylesheets
-    before_filter :extract_template_from_params
-    before_filter :render_template
+    before_action :skip_sprockets_precompiled_check
+    before_action :find_tests
+    before_action :find_stylesheets
+    before_action :extract_template_from_params
+    before_action :render_template
 
     # additional before_filters can use this
     def template=(template)
@@ -17,6 +18,10 @@ module SandboxAssets
     end
 
     protected
+
+    def skip_sprockets_precompiled_check
+      Thread.current[:skip_precompiled_check] = true
+    end
 
     def find_tests
       @tests = TestAsset.find_tests(params)

@@ -16,4 +16,5 @@ Gem::Specification.new do |gem|
   gem.version       = SandboxAssets::VERSION
 
   gem.add_dependency 'railties', '>= 3.1'
+  gem.add_dependency 'sprockets-rails', '>= 3.0.0'
 end
